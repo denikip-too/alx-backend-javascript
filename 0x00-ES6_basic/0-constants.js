@@ -1,4 +1,4 @@
-// Modifying functions variables
+// Modifying functions
 
 export function taskFirst() {
   const task = 'I prefer const when I can.';
