@@ -1,8 +1,13 @@
 // modifying variables inside the function so that then are not overwritten
 
 export default function taskBlock(trueOrFalse) {
-  const task = false;
-  const task2 = true;
+  let task = false;
+  let task2 = true;
+  
+  if (trueOrFalse) {
+    let task = true;
+    let task2 = false;
+  }
 
   return [task, task2];
 }
