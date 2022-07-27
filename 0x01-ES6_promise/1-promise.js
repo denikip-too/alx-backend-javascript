@@ -5,8 +5,8 @@ export default function getFullResponseFromAPI(success) {
     if (success === true) {
       resolve('Success', 200);
     }
-    else if (success === false) {
-      reject('The fake API is not working currently');
+    else {
+      resolve('The fake API is not working currently');
     }
   });
 }
