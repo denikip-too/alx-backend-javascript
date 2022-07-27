@@ -1,7 +1,7 @@
 //  return a promise
 
-export function getFullResponseFromAPI(success) {
-  const promise = new Promise((resolve, reject) => {
+export default function getFullResponseFromAPI(success) {
+  return new Promise((resolve, reject) => {
     if (success === true) {
       resolve('Success', 200);
     }
