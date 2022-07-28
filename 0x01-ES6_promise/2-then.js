@@ -1,12 +1,8 @@
 // Appending three handlers to the function
 
 export default function handleResponseFromAPI(promise) {
-  new Promise((resolve, reject) => {
-    if (promise) {
-      resolve({ status: 200, body: 'success' });
-    }
-  }).then(() => {
-    return promise;
+  return new Promise((resolve, reject) => {
+    resolve({ status: 200, body: 'success' });
   }).catch(() => {
     reject(new Error());
   }).then(() => {
