@@ -6,5 +6,5 @@ export default function initializeRooms () {
   classroom1 = new ClassRoom(19);
   classroom2 = new ClassRoom(20);
   classromm3 = new ClassRoom(34);
-  return [{ classroom1, classroom2, classroom3 }];
+  return [classroom1, classroom2, classroom3];
 }
