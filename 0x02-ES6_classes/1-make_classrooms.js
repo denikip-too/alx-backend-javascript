@@ -3,8 +3,6 @@
 import ClassRoom from "./0-classroom.js";
 
 export default function initializeRooms () {
-  classroom1 = new ClassRoom(19);
-  classroom2 = new ClassRoom(20);
-  classroom3 = new ClassRoom(34);
-  return [classroom1, classroom2, classroom3];
+  const array = [new ClassRoom(19), new ClassRoom(20), new ClassRoom(34)];
+  return array;
 }
