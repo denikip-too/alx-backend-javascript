@@ -5,7 +5,7 @@ export default class HolbertonCourse {
     this.name = name;
     this.length = length;
     this.students = students;
-    if (isNaN(name) || isNaN(length) || isNaN(students)) {
+    if (isNaN(this.name) || isNaN(this.length) || isNaN(this.students)) {
       throw new Error('Must not be empty');
     }
   }
@@ -22,7 +22,7 @@ export default class HolbertonCourse {
   }
 
   set setlength(value) {
-    if (!(Number.isInteger(value))) {
+    if (typeof value !== 'number') {
       throw new TypeError('Length must be a number');
     }
     this._length = value;
