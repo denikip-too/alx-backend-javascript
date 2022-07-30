@@ -2,9 +2,9 @@
 
 export default class HolbertonCourse {
   constructor(name, length, students) {
-    this._name = name;
-    this._length = length;
-    this._students = students;
+    this.name = name;
+    this.length = length;
+    this.students = students;
   }
 
   set setname(value) {
@@ -30,13 +30,11 @@ export default class HolbertonCourse {
   }
 
   set setstudents(value) {
-    let i = 0;
-    while (i < value.length) {
-      if (typeof value !== 'string') {
+    value.ForEach((j) => {
+      if (typeof j !== 'string') {
         throw new TypeError('Student Name must be a string');
       }
-      i++;
-    }
+    });
     this._students = value;
   }
 
