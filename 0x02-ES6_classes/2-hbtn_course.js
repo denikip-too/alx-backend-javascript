@@ -6,6 +6,7 @@ export default class HolbertonCourse {
     this._length = length;
     this._students = students;
   }
+
   set setname(value) {
     if (typeof value !== 'string') {
       throw new TypeError('Name must be a string');
@@ -29,10 +30,12 @@ export default class HolbertonCourse {
   }
 
   set setstudents(value) {
-    for (let i = 0; i < value.length; i++) {
+    let i = 0;
+    while (i < value.length) {
       if (typeof value !== 'string') {
         throw new TypeError('Student Name must be a string');
       }
+      i++;
     }
     this._students = value;
   }
