@@ -5,6 +5,9 @@ export default class HolbertonCourse {
     this.name = name;
     this.length = length;
     this.students = students;
+    if (isNaN(name) || isNaN(length) || isNaN(students)) {
+      throw new Error('Must not be empty');
+    }
   }
 
   set setname(value) {
