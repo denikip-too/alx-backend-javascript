@@ -5,7 +5,7 @@ export default class HolbertonCourse {
     this.name = name;
     this.length = length;
     this.students = students;
-    if (isNaN(this.name) || isNaN(this.length) || isNaN(this.students)) {
+    if (Number.isNaN(this.name) || Number.isNaN(this.length) || Number.isNaN(this.students)) {
       throw new Error('Must not be empty');
     }
   }
