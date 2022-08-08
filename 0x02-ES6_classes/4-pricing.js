@@ -7,7 +7,7 @@ export default class Pricing {
   }
 
   set amount(value) {
-    if (typeof value  !== 'number') {
+    if (typeof value !== 'number') {
       throw new TypeError('Amount must be an integer');
     }
     this._amount = value;
@@ -26,6 +26,10 @@ export default class Pricing {
   }
 
   displayFullPrice() {
-    return `${this.amount} ${this._currency} (${Currency.code})`
+    return `${this.amount} ${this._currency} (${Currency.code})`;
+  }
+
+  static convertPrice(amount, conversionRate) {
+    return amount * conversionRate;
   }
 }
