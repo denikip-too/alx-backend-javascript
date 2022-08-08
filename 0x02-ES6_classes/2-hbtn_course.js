@@ -6,7 +6,6 @@ export default class HolbertonCourse {
     this.length = length;
     this.students = students;
   }
-}
 
   set name(value) {
     if (typeof value !== 'string') {
