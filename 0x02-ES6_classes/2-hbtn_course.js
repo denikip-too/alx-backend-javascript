@@ -5,10 +5,8 @@ export default class HolbertonCourse {
     this.name = name;
     this.length = length;
     this.students = students;
-    if (Number.isNaN(this.name) || Number.isNaN(this.length) || Number.isNaN(this.students)) {
-      throw new Error('Must not be empty');
-    }
   }
+}
 
   set setname(value) {
     if (typeof value !== 'string') {
