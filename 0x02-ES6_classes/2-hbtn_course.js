@@ -1,5 +1,3 @@
-// Implementing a getter and setter for each attribute
-
 export default class HolbertonCourse {
   constructor(name, length, students) {
     this._name = name;
