@@ -5,20 +5,8 @@ export default class HolbertonCourse {
     this._name = name;
     this._length = length;
     this._students = students;
-    if (typeof this._name !== 'string') {
-      throw new TypeError('Name must be a string');
-    }
-    if (typeof this._length !== 'number') {
-      throw new TypeError('Length must be a number');
-    }
-    this._students.ForEach((j) => {
-      if (typeof j !== 'string') {
-        throw new TypeError('Student Name must be a string');
-      }
-    });
   }
 
-  // set name
   set name(value) {
     if (typeof value !== 'string') {
       throw new TypeError('Name must be a string');
@@ -31,7 +19,6 @@ export default class HolbertonCourse {
     return this._name;
   }
 
-  // set length
   set length(value) {
     if (typeof value !== 'number') {
       throw new TypeError('Length must be a number');
@@ -44,7 +31,6 @@ export default class HolbertonCourse {
     return this._length;
   }
 
-  // set students
   set students(value) {
     value.ForEach((j) => {
       if (typeof j !== 'string') {
