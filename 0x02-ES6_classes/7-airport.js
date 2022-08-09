@@ -9,4 +9,4 @@ export default class Airport {
   }
 }
 const obj = new Airport();
-obj.toString = `[object ${this._code}]`;
+obj.toString === `[object ${this._code}]`;
