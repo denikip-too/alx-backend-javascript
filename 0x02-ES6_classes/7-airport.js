@@ -5,8 +5,11 @@ export default class Airport {
   }
 
   get [Symbol.toStringTag]() {
-    return 'this._code';
+    return 'Airport';
   }
+//  toString() {
+//    return `${this._code}`;
+	//    }
 }
 const obj = new Airport();
-obj.toString === `[object ${this._code}]`;
+obj.toString = `[object ${this._code}]`;
