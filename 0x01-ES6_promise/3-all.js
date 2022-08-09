@@ -5,8 +5,8 @@ import uploadPhoto from "./utils";
 import createUser from "./utils";
 
 export default function handleProfileSignup() {
-  promise.all(`${body} ${firstName} ${lastName}`).then((values) => {
-    console.log(values);
+  promise.all(uploadPhoto createUser).then(() => {
+    console.log(`${body} ${firstName} ${lastName}`);
   })
   .catch((err) => {
     console.log("Signup system offline");
