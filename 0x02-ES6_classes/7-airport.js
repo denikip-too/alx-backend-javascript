@@ -4,7 +4,6 @@ export default class Airport {
     this._code = code;
   }
 }
-const obj = new Airport();
-Airport.prototype.toString = function objToString() {
+Airport.prototype.toString = function airportToString() {
   return `[object ${this._code}]`;
-}
+};
