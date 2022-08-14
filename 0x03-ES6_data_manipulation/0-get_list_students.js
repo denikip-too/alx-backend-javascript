@@ -7,5 +7,4 @@ export default function getListStudents (id, firstName, location) {
     id: 3, firsName: 'Serena', location: 'San Francisco'
   }];
   return (arr);
-  getListStudents.apply(arr);
 }
