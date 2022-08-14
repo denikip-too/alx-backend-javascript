@@ -3,7 +3,8 @@
 import getListStudents from "./0-get_list_students.js";
 
 
-default export function getListStudentIds (id) {
-  const arrs = new Map();
-  return [arrs.get(id)]
+default export function getListStudentIds (obj) {
+  const arrs = Object.keys(obj).map(function(key) {
+    return [Number(key), obj[key]];
+  });
 }
