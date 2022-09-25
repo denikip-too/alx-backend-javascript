@@ -1,6 +1,4 @@
 function calculateNumber (a, b) {
-  a = Math.round(a);
-  b = Math.round(b);
-  console.log(`${a} + ${b}`);
+  return (Math.round(a) + b = Math.round(b));
 }
 module.exports = calculateNumber;
